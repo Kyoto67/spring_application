@@ -25,3 +25,30 @@
 	2. Для доступа к БД необходимо использовать Spring Data.
 
 ![](front-end/src/img/areas.png "task.png")
+---
+# Запуск
+
+1. Создать общую сеть под контейнеры.
+```
+sudo docker network create my_docker_network
+```
+2. Развернуть БД.
+```
+./db/run-docker.sh
+```
+3. Сбилдить back-end часть.
+```
+cd back-end
+./build-docker.sh
+```
+4. Запустить back-end.
+```
+./run-docker.sh
+cd ..
+```
+5. Запустить фронт.
+```
+cd front-end
+npm install
+npm start
+```

@@ -1,1 +1,1 @@
-sudo docker run --name backend -dit -p 8080:8080 --network weblab_net backend-build
+sudo docker run --name backend -dit -p 8080:8080 --network my_docker_network backend-build

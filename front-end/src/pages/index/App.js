@@ -1,4 +1,4 @@
-import logo from '../../img/areas.png';
+import logo from '../../img/IMG_1164.PNG';
 import './App.css';
 import authAPI from "../../scripts/auth";
 import {useNavigate} from "react-router-dom";
